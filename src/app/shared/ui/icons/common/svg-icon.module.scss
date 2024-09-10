@@ -1,0 +1,8 @@
+.icon {
+  color: var(--text-secondary-color);
+  transition: var(--basic-transition);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

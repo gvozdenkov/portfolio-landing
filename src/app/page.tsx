@@ -1,14 +1,12 @@
-import { Logo } from './shared/ui';
+import { Header } from './components';
 
-import s from './page.module.css';
+import s from './page.module.scss';
 
 export default function Home() {
   return (
     <div className={s.page}>
-      <header>header</header>
-      <main className={s.main}>
-        <Logo solid />
-      </main>
+      <Header />
+      <main className={s.main}></main>
       <footer className={s.footer}>footer</footer>
     </div>
   );

@@ -1,0 +1,12 @@
+.menuList {
+  display: flex;
+  gap: 50px;
+}
+
+.menuItem {
+  transition: var(--basic-transition);
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
