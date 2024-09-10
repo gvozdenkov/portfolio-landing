@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { mainFont, secondaryFont } from './utils/fonts';
+import { mainFont, secondaryFont } from './shared/utils/fonts';
 
 import './globals.css';
 
