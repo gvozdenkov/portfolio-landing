@@ -1,0 +1,91 @@
+.section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: var(--section-padding) 0;
+
+  &__title {
+    margin-bottom: 140px;
+  }
+}
+
+.iconList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 80px 100px;
+  width: 100%;
+
+  &__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+
+    &_html {
+      background-image: url('./icons/html.svg');
+    }
+
+    &_css {
+      background-image: url('./icons/css.svg');
+    }
+
+    &_js {
+      background-image: url('./icons/js.svg');
+      width: 113px;
+      height: 101px;
+    }
+
+    &_react {
+      background-image: url('./icons/react.svg');
+      width: 105px;
+      height: 100px;
+    }
+
+    &_redux {
+      background-image: url('./icons/redux.svg');
+    }
+
+    &_bootstrap {
+      background-image: url('./icons/bootstrap.svg');
+      width: 88px;
+      height: 87px;
+    }
+
+    &_tailwind {
+      background-image: url('./icons/tailwind.svg');
+      width: 131px;
+      height: 131px;
+    }
+
+    &_sass {
+      background-image: url('./icons/sass.svg');
+      width: 117px;
+      height: 87px;
+    }
+
+    &_git {
+      background-image: url('./icons/git.svg');
+      width: 105px;
+      height: 105px;
+    }
+
+    &_greensock {
+      background-image: url('./icons/greensock.svg');
+    }
+
+    &_vscode {
+      background-image: url('./icons/vscode.svg');
+      width: 112px;
+      height: 112px;
+    }
+
+    &_github {
+      background-image: url('./icons/github.svg');
+      width: 88px;
+      height: 88px;
+    }
+  }
+}

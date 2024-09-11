@@ -7,6 +7,7 @@
   --text-secondary-color-hover: #666666d7;
 
   --basic-transition: 0.3s ease-out;
+  --section-padding: 100px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,6 +68,26 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+.title-group {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 49px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--text-primary-color);
+}
+
+.subtitle {
+  font-size: 32px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--text-secondary-color);
 }
 
 @media (prefers-color-scheme: dark) {
