@@ -14,7 +14,7 @@ export const Projects = () => {
 
       <ul className={s.cardList}>
         {projectItems.map((project) => (
-          <li>
+          <li key={project.codeLink}>
             <ProjectCard {...project} />
           </li>
         ))}

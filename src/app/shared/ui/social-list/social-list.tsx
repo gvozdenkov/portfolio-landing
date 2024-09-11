@@ -15,7 +15,7 @@ export const SocialList = ({ items, extraClass = '' }: SocialList) => {
   return (
     <ul className={clsx(s.socialList, { [extraClass]: !!extraClass })}>
       {items.map((item) => (
-        <li>
+        <li key={item.link}>
           <Link
             href={item.link}
             title={item.title}
