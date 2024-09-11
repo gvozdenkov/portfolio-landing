@@ -3,10 +3,20 @@ export type MenuItem = {
   link: string;
 };
 
-export type IconType = 'github' | 'twitter' | 'linkedin';
+export type IconType = 'github' | 'twitter' | 'linkedin' | 'chain';
 
 export type SocialItem = {
   name: IconType;
   title: string;
   link: string;
+};
+
+export type ProjectInfo = {
+  image: string;
+  alt: string;
+  title: string;
+  desc: string;
+  stack: string[];
+  previewLink: string;
+  codeLink: string;
 };

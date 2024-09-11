@@ -1,0 +1,83 @@
+$cardPadding: 28px;
+
+.card {
+  display: flex;
+  flex-flow: column;
+  box-shadow: 2px 2px 100px 0 rgba(0 0 0 / 0.2);
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__img {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 27px;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    padding: 0 $cardPadding;
+    text-align: center;
+  }
+
+  &__desc {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    padding: 0 $cardPadding;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  &__stack {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.86;
+    margin-bottom: 21px;
+    padding: 0 $cardPadding;
+  }
+
+  &__textAccent {
+    font-size: 16px;
+    line-height: 1.62;
+    font-weight: 400;
+  }
+
+  &__footer {
+    padding: 0 $cardPadding $cardPadding $cardPadding;
+    margin-top: auto;
+  }
+
+  &__footerList {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+  }
+
+  &__footerLink {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--basic-transition);
+
+    &:hover {
+      color: var(--text-primary-color-hover);
+    }
+  }
+}

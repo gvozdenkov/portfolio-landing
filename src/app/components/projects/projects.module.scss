@@ -1,0 +1,16 @@
+.section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: var(--section-padding) 0;
+
+  &__title {
+    margin-bottom: 96px;
+  }
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 62px 45px;
+}
