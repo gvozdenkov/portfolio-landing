@@ -5,8 +5,13 @@
   --text-primary-color-hover: #42446ece;
   --text-secondary-color: #666;
   --text-secondary-color-hover: #666666d7;
+  --color-gradient-start: #e70faa;
+  --color-gradient-end: #00c0fd;
+  --color-gradient-name-start: #1aaaf2;
+  --color-gradient-name-end: #7565d2;
 
   --basic-transition: 0.3s ease-out;
+
   --section-padding: 100px;
 }
 
@@ -69,6 +74,21 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
 .title-group {
   display: flex;
   flex-flow: column;
@@ -88,6 +108,23 @@ img {
   line-height: 26px;
   font-weight: 400;
   color: var(--text-secondary-color);
+}
+
+.gradient-text {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.gradient-name {
+  background-color: #f3ec78;
+  background-image: linear-gradient(
+    -90deg,
+    var(--color-gradient-name-end),
+    20%,
+    var(--color-gradient-name-start)
+  );
 }
 
 @media (prefers-color-scheme: dark) {

@@ -8,4 +8,12 @@
   margin: 0 auto;
   padding: 40px 190px;
   font-family: var(--font-geist-sans);
+
+  &__hero {
+    margin: 120px 0 200px 0;
+  }
+}
+
+.main {
+  width: 100%;
 }

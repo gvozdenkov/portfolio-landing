@@ -1,0 +1,30 @@
+.hero {
+  display: grid;
+  grid-template: 'title . avatar' / minmax(200px, 636px) auto minmax(200px, 350px);
+  align-items: center;
+  width: 100%;
+  padding: var(--section-padding) 0;
+
+  &__title {
+    grid-area: title;
+    font-size: 58px;
+    line-height: 1.2;
+    font-weight: 700;
+    white-space: pre-line;
+    letter-spacing: -1px;
+    color: var(--text-primary-color);
+  }
+
+  &__avatar {
+    grid-area: avatar;
+    width: 350px;
+    height: 350px;
+  }
+
+  &__title {
+    font-size: 58px;
+    line-height: 1.2;
+    margin-top: -5px;
+    margin-bottom: -10px;
+  }
+}

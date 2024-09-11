@@ -1,0 +1,8 @@
+.circleImage {
+  border: 9px solid #0000;
+  border-radius: 100%;
+  background: linear-gradient(red, blue) padding-box,
+    linear-gradient(var(--color-gradient-start), var(--color-gradient-end)) border-box;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
