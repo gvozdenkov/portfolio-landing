@@ -5,6 +5,10 @@
 
 .menuItem {
   transition: var(--basic-transition);
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: inherit;
+  color: var(--text-secondary-color);
 
   &:hover {
     opacity: 0.6;
