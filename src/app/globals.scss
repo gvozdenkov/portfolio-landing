@@ -7,8 +7,6 @@
   --text-secondary-color-hover: #666666d7;
   --color-gradient-start: #e70faa;
   --color-gradient-end: #00c0fd;
-  --color-gradient-name-start: #1aaaf2;
-  --color-gradient-name-end: #7565d2;
 
   --basic-transition: 0.3s ease-out;
 
@@ -110,21 +108,17 @@ img {
   color: var(--text-secondary-color);
 }
 
-.gradient-text {
+.text-background-clip {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
-.gradient-name {
-  background-color: #f3ec78;
-  background-image: linear-gradient(
-    -90deg,
-    var(--color-gradient-name-end),
-    20%,
-    var(--color-gradient-name-start)
-  );
+.gradient-basic {
+  background-color: var(--color-gradient-start);
+  background-image: linear-gradient(90deg, var(--color-gradient-end), var(--color-gradient-start));
+  background-repeat: no-repeat;
 }
 
 @media (prefers-color-scheme: dark) {

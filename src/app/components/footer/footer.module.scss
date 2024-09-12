@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding: 60px 0;
+  width: 100%;
+  position: relative;
+
+  &__copyright {
+    font-size: 18px;
+    color: var(--text-secondary-color);
+  }
+
+  &__copyrightNameAccent {
+    background-size: 500%;
+    background-position-x: -200px;
+  }
+
+  &__copyrightLoveAccent {
+    background-size: 500%;
+    background-position-x: -150px;
+  }
+
+  &__copyrightCoffeeAccent {
+    background-size: 500%;
+    background-position-x: -300px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-secondary-color);
+  }
+}
