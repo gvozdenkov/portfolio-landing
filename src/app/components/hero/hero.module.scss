@@ -9,10 +9,10 @@
     grid-area: title;
     font-size: 58px;
     line-height: 1.2;
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     white-space: pre-line;
     letter-spacing: -1px;
-    color: var(--text-primary-color);
+    color: var(--clr-primary-400);
   }
 
   &__titleAccent {

@@ -1,8 +1,7 @@
+import clsx from 'clsx';
+
 import { MenuItems } from '@/app/shared/config';
 import { MenuList } from '@/app/shared/ui';
-
-import s from './navbar.module.scss';
-import clsx from 'clsx';
 
 type NavbarProps = {
   extraClass?: string;
@@ -10,7 +9,7 @@ type NavbarProps = {
 
 export const Navbar = ({ extraClass = '' }: NavbarProps) => {
   return (
-    <nav className={clsx(s.navbar, { [extraClass]: !!extraClass })}>
+    <nav className={clsx({ [extraClass]: !!extraClass })}>
       <MenuList items={MenuItems} />
     </nav>
   );
