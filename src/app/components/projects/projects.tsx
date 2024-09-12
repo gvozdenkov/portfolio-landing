@@ -1,16 +1,15 @@
 import clsx from 'clsx';
 
-import s from './projects.module.scss';
 import { projectItems } from '@/app/shared/config';
 import { ProjectCard } from '@/app/shared/ui/project-card/project-card';
+import { Title } from '@/app/shared/ui';
+
+import s from './projects.module.scss';
 
 export const Projects = () => {
   return (
     <section id="projects" className={s.section}>
-      <hgroup className={clsx('title-group', s.section__title)}>
-        <h2 className="title">Projects</h2>
-        <p className="subtitle">Things I’ve built so far</p>
-      </hgroup>
+      <Title title="Projects" subtitle="Things I’ve built so far" extraClass={s.section__title} />
 
       <ul className={s.cardList}>
         {projectItems.map((project) => (

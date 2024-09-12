@@ -1,0 +1,20 @@
+.hgroup {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 49px;
+
+  &__title {
+    font-size: 48px;
+    line-height: 26px;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-400);
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    line-height: 26px;
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-400);
+  }
+}

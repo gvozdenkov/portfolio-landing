@@ -83,27 +83,6 @@ img {
   white-space: nowrap !important;
 }
 
-.title-group {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 49px;
-}
-
-.title {
-  font-size: 48px;
-  line-height: 26px;
-  font-weight: var(--fw-bold);
-  color: var(--clr-primary-400);
-}
-
-.subtitle {
-  font-size: 32px;
-  line-height: 26px;
-  font-weight: var(--fw-regular);
-  color: var(--clr-neutral-400);
-}
-
 .text-background-clip {
   -webkit-background-clip: text;
   -moz-background-clip: text;

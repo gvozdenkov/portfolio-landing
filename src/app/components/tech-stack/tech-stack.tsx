@@ -2,14 +2,16 @@ import React from 'react';
 
 import s from './tech-stack.module.scss';
 import clsx from 'clsx';
+import { Title } from '@/app/shared/ui';
 
 export const TechStack = () => {
   return (
     <section id="techstack" className={s.section}>
-      <hgroup className={clsx('title-group', s.section__title)}>
-        <h2 className="title">My Tech Stack</h2>
-        <p className="subtitle">Technologies I’ve been working with recently</p>
-      </hgroup>
+      <Title
+        title="My Tech Stack"
+        subtitle="Technologies I’ve been working with recently"
+        extraClass={s.section__title}
+      />
 
       <ul className={s.iconList}>
         <li>
