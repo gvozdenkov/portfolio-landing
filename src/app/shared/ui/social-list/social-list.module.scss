@@ -1,12 +1,14 @@
 .socialList {
   display: flex;
   gap: 20px;
+
+  &__item {
+    display: flex;
+  }
 }
 
-.socialItem {
-  transition: opacity 0.3s ease-out;
-
-  &:hover {
-    opacity: 0.6;
+.svgLink {
+  & svg {
+    display: block;
   }
 }
