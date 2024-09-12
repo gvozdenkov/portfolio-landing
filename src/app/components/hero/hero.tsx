@@ -17,7 +17,9 @@ export const Hero = ({ extraClass = '' }: HeroProps) => {
         Hi &#128075;,
         <br /> My name is
         <br />
-        <span className="gradient-text gradient-name">Pavan MG</span>
+        <span className={clsx('text-background-clip', 'gradient-basic', s.hero__titleAccent)}>
+          Pavan MG
+        </span>
         <br /> I build things for web
       </p>
       <CircleImage image={avatar} extraClass={s.hero__avatar} />

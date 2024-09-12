@@ -15,6 +15,10 @@
     color: var(--text-primary-color);
   }
 
+  &__titleAccent {
+    background-size: 200%;
+  }
+
   &__avatar {
     grid-area: avatar;
     width: 350px;
