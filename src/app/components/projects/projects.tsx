@@ -1,8 +1,7 @@
 import clsx from 'clsx';
 
 import { projectItems } from '@/app/shared/config';
-import { ProjectCard } from '@/app/shared/ui/project-card/project-card';
-import { Title } from '@/app/shared/ui';
+import { ProjectCard, Title } from '@/app/shared/ui';
 
 import s from './projects.module.scss';
 
