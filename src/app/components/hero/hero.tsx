@@ -11,7 +11,7 @@ type HeroProps = {
 
 export const Hero = ({ extraClass = '' }: HeroProps) => {
   return (
-    <section className={clsx(s.hero, { [extraClass]: !!extraClass })}>
+    <section id="about" className={clsx(s.hero, { [extraClass]: !!extraClass })}>
       <h1 className="sr-only">Pavan MG web developer</h1>
       <p className={s.hero__title}>
         Hi &#128075;,

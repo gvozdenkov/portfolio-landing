@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 export const TechStack = () => {
   return (
-    <section className={s.section}>
+    <section id="techstack" className={s.section}>
       <hgroup className={clsx('title-group', s.section__title)}>
         <h2 className="title">My Tech Stack</h2>
         <p className="subtitle">Technologies I’ve been working with recently</p>

@@ -11,7 +11,7 @@ type ContactsProps = {
 
 export const Contacts = ({ extraClass = '' }: ContactsProps) => {
   return (
-    <section className={clsx(s.contacts, { [extraClass]: !!extraClass })}>
+    <section id="contact" className={clsx(s.contacts, { [extraClass]: !!extraClass })}>
       <Logo solid />
       <p className={clsx(s.contacts__text, s.contacts__text_phone)}>+91 12345 09876</p>
       <p className={clsx(s.contacts__text, s.contacts__text_email)}>info@example.com</p>
