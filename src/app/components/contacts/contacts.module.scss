@@ -1,0 +1,28 @@
+.contacts {
+  display: grid;
+  grid-template:
+    'logo . phone . email . social' / max-content minmax(100px, 1fr) max-content minmax(40px, 60px)
+    max-content minmax(40px, 100px) max-content;
+  align-items: center;
+
+  padding: var(--section-padding) 0;
+
+  &__text {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.44;
+
+    &_phone {
+      grid-area: phone;
+    }
+
+    &_email {
+      grid-area: email;
+    }
+  }
+
+  &__social {
+    grid-area: social;
+  }
+}

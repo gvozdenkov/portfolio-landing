@@ -1,4 +1,4 @@
-import { Header, Hero, Projects, TechStack } from './components';
+import { Contacts, Header, Hero, Projects, TechStack } from './components';
 
 import s from './page.module.scss';
 
@@ -10,6 +10,7 @@ export default function Home() {
         <Hero extraClass={s.page__hero} />
         <TechStack />
         <Projects />
+        <Contacts />
       </main>
       <footer className={s.footer}>footer</footer>
     </div>
