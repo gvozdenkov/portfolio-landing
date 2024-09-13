@@ -6,15 +6,31 @@
 
   &__title {
     font-size: 48px;
-    line-height: 26px;
+    line-height: 1.2;
     font-weight: var(--fw-bold);
     color: var(--clr-primary-400);
+    text-align: center;
   }
 
   &__subtitle {
     font-size: 32px;
-    line-height: 26px;
+    line-height: 1.2;
     font-weight: var(--fw-regular);
+    text-align: center;
     color: var(--clr-neutral-400);
+  }
+}
+
+@media (max-width: 50em) {
+  .hgroup {
+    gap: 16px;
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
   }
 }
