@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import clsx from 'clsx';
+
 import logoColor from './logo-color.svg';
 
 import s from './logo.module.scss';
@@ -9,13 +10,21 @@ type LogoProps = {
   fill?: string;
   solid?: boolean;
   priority?: boolean;
+  extraClass?: string;
 };
 
-export const Logo = ({ width = 97, fill, solid = false, priority = false }: LogoProps) => {
+export const Logo = ({
+  width = 97,
+  fill,
+  solid = false,
+  priority = false,
+  extraClass = '',
+}: LogoProps) => {
   const height = Math.ceil(width * 0.608);
 
   return solid ? (
     <svg
+      className={clsx({ [extraClass]: !!extraClass })}
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
