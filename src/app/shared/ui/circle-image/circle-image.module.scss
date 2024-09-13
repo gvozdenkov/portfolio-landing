@@ -4,5 +4,6 @@
   background: linear-gradient(red, blue) padding-box,
     linear-gradient(var(--clr-accent-one), var(--clr-accent-two)) border-box;
   object-fit: cover;
-  aspect-ratio: 1;
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
