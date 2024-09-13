@@ -14,6 +14,7 @@ export const SvgIcon = ({ width, height, size, viewBox, children, ...props }: SV
       viewBox={viewBox ?? '0 0 24 24'}
       width={size || width || 24}
       height={size || height || 24}
+      aria-hidden
       {...props}
     >
       {children}
