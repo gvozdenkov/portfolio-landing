@@ -1,17 +1,17 @@
 import clsx from 'clsx';
 
-import { MenuItems } from '@/app/shared/config';
-import { MenuList } from '@/app/shared/ui';
 import { NavProps } from '@/app/shared/types';
+import { PropsWithChildren } from 'react';
 
-type NavbarProps = NavProps & {
-  extraClass?: string;
-};
+type NavbarProps = NavProps &
+  PropsWithChildren & {
+    extraClass?: string;
+  };
 
-export const Navbar = ({ extraClass = '', ...props }: NavbarProps) => {
+export const Navbar = ({ extraClass = '', children, ...props }: NavbarProps) => {
   return (
     <nav {...props} className={clsx({ [extraClass]: !!extraClass })}>
-      <MenuList role="list" id="primary-nav" items={MenuItems} />
+      {children}
     </nav>
   );
 };
