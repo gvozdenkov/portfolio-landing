@@ -1,3 +1,5 @@
+import { ButtonHTMLAttributes, DetailedHTMLProps, HTMLAttributes } from 'react';
+
 export type MenuItem = {
   text: string;
   link: string;
@@ -20,3 +22,14 @@ export type ProjectInfo = {
   previewLink: string;
   codeLink: string;
 };
+
+type ElementProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+
+export type NavProps = ElementProps;
+
+export type ButtonProps = DetailedHTMLProps<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>;
+
+export type ULProps = DetailedHTMLProps<HTMLAttributes<HTMLUListElement>, HTMLUListElement>;

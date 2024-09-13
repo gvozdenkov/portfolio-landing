@@ -1,0 +1,11 @@
+.burgerButton {
+  display: flex;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0.5em;
+
+  &__close {
+    display: none;
+  }
+}
