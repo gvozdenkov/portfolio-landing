@@ -7,10 +7,10 @@ export default function Home() {
     <div className={s.page}>
       <Header />
       <main className={s.main}>
-        <Hero extraClass={s.page__hero} />
+        <Hero />
         <TechStack />
         <Projects />
-        <Contacts />
+        <Contacts extraClass={s.page__contacts} />
       </main>
       <Footer />
     </div>

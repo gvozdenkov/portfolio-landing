@@ -13,7 +13,11 @@ type SocialList = {
 
 export const SocialList = ({ items, extraClass = '' }: SocialList) => {
   return (
-    <ul className={clsx(s.socialList, { [extraClass]: !!extraClass })}>
+    <ul
+      role="list"
+      aria-label="Social links"
+      className={clsx(s.socialList, { [extraClass]: !!extraClass })}
+    >
       {items.map((item) => (
         <li key={item.link} className={s.socialList__item}>
           <Link
