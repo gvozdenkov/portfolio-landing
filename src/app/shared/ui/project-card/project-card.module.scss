@@ -57,13 +57,15 @@ $cardPadding: 28px;
 
   &__footer {
     padding: 0 $cardPadding $cardPadding $cardPadding;
-    margin-top: auto;
+    margin: auto;
   }
 
   &__footerList {
     list-style: none;
     display: flex;
-    gap: 48px;
+    flex-wrap: wrap;
+    gap: 10px 48px;
+    justify-content: center;
   }
 
   &__footerLink {
@@ -73,6 +75,7 @@ $cardPadding: 28px;
     display: flex;
     align-items: center;
     gap: 10px;
+    min-width: max-content;
     transition: var(--basic-transition);
 
     &:hover,
