@@ -1,8 +1,20 @@
 .contacts {
+  display: grid;
+  grid-template:
+    'logo . phone . email . social'
+    / max-content minmax(100px, 1fr) max-content 50px max-content 50px max-content;
+
+  justify-items: start;
+
+  &__logo {
+    grid-area: logo;
+  }
+
   &__text {
     font-family: var(--ff-secondary);
     font-size: 18px;
     line-height: 1.44;
+    margin-block-start: 20px;
 
     &_phone {
       grid-area: phone;
@@ -15,5 +27,43 @@
 
   &__social {
     grid-area: social;
+    margin-block-start: 18px;
+  }
+}
+
+@media (max-width: 50em) {
+  .contacts {
+    grid-template:
+      '. . logo . .'
+      '. . . . .' 1em
+      'phone . email . social'
+      / max-content minmax(50px, auto) max-content minmax(50px, auto) max-content;
+
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    &__text {
+      margin-block-start: 0;
+    }
+
+    &__social {
+      margin-block-start: 0;
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  .contacts {
+    --gap: 20px;
+
+    grid-template:
+      'logo'
+      '.' var(--gap)
+      'phone'
+      '.' var(--gap)
+      'email'
+      '.' var(--gap)
+      'social' / 1fr;
   }
 }
