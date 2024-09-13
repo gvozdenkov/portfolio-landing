@@ -26,17 +26,17 @@ export const MenuItems: MenuItem[] = [
 export const socialItems: SocialItem[] = [
   {
     name: 'github',
-    title: 'share on github',
+    title: 'Share on github',
     link: 'https://github.com',
   },
   {
     name: 'twitter',
-    title: 'share on twitter',
+    title: 'Share on twitter',
     link: 'https://x.com',
   },
   {
     name: 'linkedin',
-    title: 'share on linkedin',
+    title: 'Share on linkedin',
     link: 'https://linkedin.com',
   },
 ];
