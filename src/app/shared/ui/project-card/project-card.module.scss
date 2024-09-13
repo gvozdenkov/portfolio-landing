@@ -75,7 +75,8 @@ $cardPadding: 28px;
     gap: 10px;
     transition: var(--basic-transition);
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: var(--clr-primary-200);
     }
   }

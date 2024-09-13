@@ -15,6 +15,7 @@
   --basic-transition: 0.3s ease-out;
 
   --padding-size-100: 42px;
+  --padding-size-200: 60px;
   --padding-size-400: 100px;
 }
 
@@ -86,6 +87,10 @@ img {
 
 .padding-block-100 {
   padding-block: var(--padding-size-100);
+}
+
+.padding-block-200 {
+  padding-block: var(--padding-size-200);
 }
 
 .padding-block-400 {

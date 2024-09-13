@@ -1,12 +1,10 @@
 .hero {
   display: grid;
-  grid-template: 'title . avatar' / minmax(200px, 636px) auto minmax(200px, 350px);
-  align-items: center;
-  width: 100%;
-  padding: var(--section-padding) 0;
+  grid-template: 'title . avatar' / 1fr auto max-content;
 
   &__title {
     grid-area: title;
+    align-self: center;
     font-size: 58px;
     line-height: 1.2;
     font-weight: var(--fw-bold);
@@ -20,15 +18,47 @@
   }
 
   &__avatar {
+    --width: 350px;
+
     grid-area: avatar;
-    width: 350px;
-    height: 350px;
+    width: var(--width);
+    height: var(--width);
   }
 
   &__title {
     font-size: 58px;
     line-height: 1.2;
-    margin-top: -5px;
-    margin-bottom: -10px;
+  }
+}
+
+@media (max-width: 60em) {
+  .hero {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__avatar {
+      --width: 250px;
+    }
+  }
+}
+
+@media (max-width: 50em) {
+  .hero {
+    grid-template:
+      'avatar'
+      '.' 30px
+      'title'
+      / 1fr;
+    justify-items: center;
+
+    &__avatar {
+      --width: 200px;
+      justify-self: center;
+    }
+
+    &__title {
+      font-size: 38px;
+    }
   }
 }

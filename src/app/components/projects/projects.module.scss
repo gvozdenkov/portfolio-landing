@@ -1,8 +1,8 @@
 .section {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  padding: var(--section-padding) 0;
+  // display: flex;
+  // flex-flow: column;
+  // align-items: center;
+  padding: var(--padding-size-400) 0;
 
   &__title {
     margin-bottom: 96px;

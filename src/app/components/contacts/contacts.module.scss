@@ -1,12 +1,4 @@
 .contacts {
-  display: grid;
-  grid-template:
-    'logo . phone . email . social' / max-content minmax(100px, 1fr) max-content minmax(40px, 60px)
-    max-content minmax(40px, 100px) max-content;
-  align-items: center;
-
-  padding: 42px 0;
-
   &__text {
     font-family: var(--ff-secondary);
     font-size: 18px;
