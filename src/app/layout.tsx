@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { mainFont, secondaryFont } from './shared/utils/fonts';
-import Favicon from '/public/static/images/favicon.svg';
 
 import './globals.scss';
 
