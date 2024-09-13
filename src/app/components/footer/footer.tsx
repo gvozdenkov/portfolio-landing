@@ -1,16 +1,17 @@
 import clsx from 'clsx';
 import { Navbar } from '../navbar/navbar';
 
-import s from './footer.module.scss';
 import { MenuList } from '@/app/shared/ui';
 import { MenuItems } from '@/app/shared/config';
+
+import s from './footer.module.scss';
 
 export const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={clsx('container', 'padding-block-200', s.footer__container)}>
-        <Navbar aria-label="Footer">
-          <MenuList role="list" items={MenuItems} />
+        <Navbar aria-label="Footer" extraClass={s.footer__navbar}>
+          <MenuList role="list" items={MenuItems} extraClass={s.footer__navItems} />
         </Navbar>
         <p className={clsx(s.footer__copyright)}>
           Designed and built by&nbsp;
