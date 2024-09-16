@@ -13,17 +13,21 @@
   width: 100%;
 }
 
-@media (max-width: 70em) {
-  .iconList {
-    gap: 20px;
-  }
-}
-
 @media (max-width: 60em) {
+  .iconList {
+    gap: 30px;
+  }
+
   .container {
     &__title {
       margin-block-end: 80px;
     }
+  }
+}
+
+@media (max-width: 50em) {
+  .iconList {
+    gap: 15px;
   }
 }
 
