@@ -1,4 +1,4 @@
-import { MenuItem, ProjectInfo, SocialItem } from './types';
+import { MenuItem, ProjectInfo, SocialItem, TechStackIcon } from './types';
 
 export const MenuItems: MenuItem[] = [
   {
@@ -38,6 +38,81 @@ export const socialItems: SocialItem[] = [
     name: 'linkedin',
     title: 'Share on linkedin',
     link: 'https://linkedin.com',
+  },
+];
+
+export const techStackIcons: TechStackIcon[] = [
+  {
+    image: '/static/images/icons/html.svg',
+    title: 'html',
+    width: 120,
+    height: 120,
+  },
+  {
+    image: '/static/images/icons/css.svg',
+    title: 'css',
+    width: 120,
+    height: 119,
+  },
+  {
+    image: '/static/images/icons/js.svg',
+    title: 'java script',
+    width: 120,
+    height: 120,
+  },
+  {
+    image: '/static/images/icons/react.svg',
+    title: 'react',
+    width: 113,
+    height: 101,
+  },
+  {
+    image: '/static/images/icons/redux.svg',
+    title: 'redux',
+    width: 105,
+    height: 100,
+  },
+  {
+    image: '/static/images/icons/bootstrap.svg',
+    title: 'bootstrap',
+    width: 88,
+    height: 87,
+  },
+  {
+    image: '/static/images/icons/tailwind.svg',
+    title: 'tailwind',
+    width: 131,
+    height: 131,
+  },
+  {
+    image: '/static/images/icons/sass.svg',
+    title: 'sass',
+    width: 117,
+    height: 87,
+  },
+  {
+    image: '/static/images/icons/git.svg',
+    title: 'git',
+    width: 105,
+    height: 105,
+  },
+  {
+    image: '/static/images/icons/greensock.svg',
+    title: 'greensock',
+    width: 120,
+    height: 120,
+  },
+  {
+    image: '/static/images/icons/vscode.svg',
+    title: 'vscode',
+    width: 112,
+    height: 112,
+  },
+  {
+    image: '/static/images/icons/github.svg',
+    title: 'github',
+    width: 88,
+    height: 88,
   },
 ];
 

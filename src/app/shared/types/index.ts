@@ -13,6 +13,13 @@ export type SocialItem = {
   link: string;
 };
 
+export type TechStackIcon = {
+  image: string;
+  title: string;
+  width: number;
+  height: number;
+};
+
 export type ProjectInfo = {
   image: string;
   alt: string;
