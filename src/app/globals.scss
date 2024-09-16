@@ -12,6 +12,9 @@
   --fw-semibold: 500;
   --fw-bold: 700;
 
+  --fz-title: 48px;
+  --fz-subtitle: 32px;
+
   --basic-transition: 0.3s ease-out;
 
   --padding-size-100: 42px;
@@ -142,6 +145,13 @@ body {
   }
 }
 
+@media (max-width: 60em) {
+  :root {
+    --fz-title: 38px;
+    --fz-subtitle: 24px;
+  }
+}
+
 @media (max-width: 50em) {
   :root {
     --padding-size-400: 50px;
@@ -149,5 +159,12 @@ body {
 
   .container {
     --padding: 1rem;
+  }
+}
+
+@media (max-width: 40em) {
+  :root {
+    --fz-title: 32px;
+    --fz-subtitle: 20px;
   }
 }
