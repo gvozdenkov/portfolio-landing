@@ -1,7 +1,4 @@
 .section {
-  // display: flex;
-  // flex-flow: column;
-  // align-items: center;
   padding: var(--padding-size-400) 0;
 
   &__title {
@@ -13,4 +10,28 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 62px 45px;
+}
+
+@media (max-width: 60em) {
+  .section {
+    &__title {
+      margin-block-end: 80px;
+    }
+  }
+
+  .cardList {
+    gap: 30px 20px;
+  }
+}
+
+@media (max-width: 40em) {
+  .iconList {
+    gap: 0;
+  }
+
+  .section {
+    &__title {
+      margin-block-end: 40px;
+    }
+  }
 }
