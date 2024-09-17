@@ -6,7 +6,7 @@ import s from './circle-image.module.scss';
 
 type CircleImageProps = {
   image: StaticImageData;
-  alt?: string;
+  alt: string;
   extraClass?: string;
 };
 

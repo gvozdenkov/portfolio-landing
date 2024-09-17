@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 import { CircleImage } from '@/app/shared/ui';
-import avatar from './avatar-500px.jpg';
+import avatar from './avatar.jpg';
 
 import s from './hero.module.scss';
 
@@ -23,7 +23,7 @@ export const Hero = ({ extraClass = '' }: HeroProps) => {
           </span>
           <br /> I build things for web
         </p>
-        <CircleImage image={avatar} extraClass={s.hero__avatar} />
+        <CircleImage image={avatar} alt="Pavanmg portrait" extraClass={s.hero__avatar} />
       </div>
     </section>
   );
