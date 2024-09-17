@@ -5,3 +5,4 @@ export { TechStack } from './tech-stack/tech-stack';
 export { Projects } from './projects/projects';
 export { Contacts } from './contacts/contacts';
 export { Footer } from './footer/footer';
+export { SocialList } from './social-list/social-list';

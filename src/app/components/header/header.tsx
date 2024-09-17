@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import clsx from 'clsx';
 
-import { BurgerButton, Logo, MenuList, SocialList } from '@/app/shared/ui';
-import { Navbar } from '../navbar/navbar';
+import { BurgerButton, Logo, MenuList } from '@/app/shared/ui';
+import { SocialList, Navbar } from '@/app/components';
 import { MenuItems } from '@/app/shared/config';
 
 import s from './header.module.scss';

@@ -1,7 +1,7 @@
+import { PropsWithChildren } from 'react';
 import clsx from 'clsx';
 
 import { NavProps } from '@/app/shared/types';
-import { PropsWithChildren } from 'react';
 
 type NavbarProps = NavProps &
   PropsWithChildren & {

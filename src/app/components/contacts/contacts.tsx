@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 
-import { Logo, SocialList } from '@/app/shared/ui';
+import { Logo } from '@/app/shared/ui';
+import { SocialList } from '@/app/components';
 
 import s from './contacts.module.scss';
 

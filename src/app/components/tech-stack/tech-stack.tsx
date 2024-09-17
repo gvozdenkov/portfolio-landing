@@ -1,10 +1,10 @@
+import Image from 'next/image';
 import clsx from 'clsx';
 
 import { Title } from '@/app/shared/ui';
+import { techStackIcons } from '@/app/shared/config';
 
 import s from './tech-stack.module.scss';
-import Image from 'next/image';
-import { techStackIcons } from '@/app/shared/config';
 
 export const TechStack = () => {
   return (
