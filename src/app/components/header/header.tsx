@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import { BurgerButton, Logo, MenuList, SocialList } from '@/app/shared/ui';
 import { Navbar } from '../navbar/navbar';
-import { MenuItems, socialItems } from '@/app/shared/config';
+import { MenuItems } from '@/app/shared/config';
 
 import s from './header.module.scss';
 
@@ -17,7 +17,7 @@ export const Header = () => {
         <Navbar aria-label="Primary" extraClass={s.header__navbar}>
           <MenuList role="list" id="primary-nav" items={MenuItems} />
         </Navbar>
-        <SocialList items={socialItems} extraClass={s.header__social} />
+        <SocialList extraClass={s.header__social} />
         <BurgerButton aria-controls="primary-nav" extraClass={s.header__burger} />
       </div>
     </header>

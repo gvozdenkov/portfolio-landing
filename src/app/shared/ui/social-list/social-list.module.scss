@@ -5,10 +5,12 @@
   &__item {
     display: flex;
   }
-}
 
-.svgLink {
-  & svg {
-    display: block;
+  &__link {
+    & svg {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
   }
 }
