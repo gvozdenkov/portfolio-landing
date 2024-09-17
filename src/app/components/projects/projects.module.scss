@@ -7,8 +7,10 @@
 }
 
 .cardList {
+  --card-min-width: 300px;
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), 1fr));
   gap: 62px 45px;
 }
 
@@ -20,6 +22,7 @@
   }
 
   .cardList {
+    --card-min-width: 250px;
     gap: 30px 20px;
   }
 }
