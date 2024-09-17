@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Icon } from '../icons/icon';
 import { ProjectInfo } from '../../types';
 
 import s from './project-card.module.scss';
+import { ChainIcon, GitHubIcon } from '../icons';
 
 export const ProjectCard = ({
   image,
@@ -40,13 +40,13 @@ export const ProjectCard = ({
         <ul className={s.card__footerList}>
           <li>
             <Link href={previewLink} className={s.card__footerLink}>
-              <Icon name="chain" size={20} />
+              <ChainIcon size={20} />
               Live Preview
             </Link>
           </li>
           <li>
             <Link href={codeLink} className={s.card__footerLink}>
-              <Icon name="github" size={20} />
+              <GitHubIcon size={20} />
               View Code
             </Link>
           </li>
