@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { ProjectInfo } from '../../types';
 import { ChainIcon, GitHubIcon } from '../icons';
+import { convertImagePath } from '../../utils/convert-image-path';
 
 import s from './project-card.module.scss';
 
@@ -20,7 +21,7 @@ export const ProjectCard = ({
       <header className={s.card__header}>
         <div style={{ position: 'relative', height: '260px', width: '100%' }}>
           <Image
-            src={image}
+            src={convertImagePath(image)}
             alt={alt}
             className={s.card__img}
             fill

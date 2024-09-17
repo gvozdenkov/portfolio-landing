@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import { Title } from '@/app/shared/ui';
 import { techStackIcons } from '@/app/shared/config';
+import { convertImagePath } from '@/app/shared/utils/convert-image-path';
 
 import s from './tech-stack.module.scss';
 
@@ -25,7 +26,7 @@ export const TechStack = () => {
               style={{ position: 'relative', width: `${width}px`, height: `${height}px` }}
             >
               <Image
-                src={image}
+                src={convertImagePath(image)}
                 alt=""
                 aria-hidden
                 fill
