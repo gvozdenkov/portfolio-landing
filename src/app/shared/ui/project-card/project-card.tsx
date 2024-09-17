@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { ProjectInfo } from '../../types';
+import { ChainIcon, GitHubIcon } from '../icons';
 
 import s from './project-card.module.scss';
-import { ChainIcon, GitHubIcon } from '../icons';
 
 export const ProjectCard = ({
   image,

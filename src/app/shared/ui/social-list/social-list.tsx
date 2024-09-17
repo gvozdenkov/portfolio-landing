@@ -2,9 +2,9 @@ import Link from 'next/link';
 import clsx from 'clsx';
 
 import { SocialItem } from '../../types';
+import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../icons';
 
 import s from './social-list.module.scss';
-import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../icons';
 
 type SocialList = {
   extraClass?: string;
