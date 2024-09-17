@@ -1,6 +1,6 @@
 import { SvgIcon, SVGIconProps } from '../common/svg-icon';
 
-export const LinkChainIcon = (props: SVGIconProps) => {
+export const ChainIcon = (props: SVGIconProps) => {
   return (
     <SvgIcon viewBox="0 0 20 20" fill="none" {...props}>
       <path

@@ -1,4 +1,4 @@
-import { MenuItem, ProjectInfo, SocialItem, TechStackIcon } from './types';
+import { MenuItem, ProjectInfo, TechStackIcon } from './types';
 
 export const MenuItems: MenuItem[] = [
   {
@@ -20,24 +20,6 @@ export const MenuItems: MenuItem[] = [
   {
     text: 'Contact',
     link: '#contact',
-  },
-];
-
-export const socialItems: SocialItem[] = [
-  {
-    name: 'github',
-    title: 'Share on github',
-    link: 'https://github.com',
-  },
-  {
-    name: 'twitter',
-    title: 'Share on twitter',
-    link: 'https://x.com',
-  },
-  {
-    name: 'linkedin',
-    title: 'Share on linkedin',
-    link: 'https://linkedin.com',
   },
 ];
 

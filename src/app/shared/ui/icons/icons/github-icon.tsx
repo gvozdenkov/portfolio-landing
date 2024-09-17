@@ -2,7 +2,7 @@ import { SvgIcon, SVGIconProps } from '../common/svg-icon';
 
 export const GitHubIcon = (props: SVGIconProps) => {
   return (
-    <SvgIcon viewBox="0 0 30 30" aria-hidden {...props}>
+    <SvgIcon viewBox="0 0 30 30" {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

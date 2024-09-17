@@ -5,10 +5,8 @@ export type MenuItem = {
   link: string;
 };
 
-export type IconType = 'github' | 'twitter' | 'linkedin' | 'chain' | 'menu' | 'close';
-
 export type SocialItem = {
-  name: IconType;
+  icon: JSX.Element;
   title: string;
   link: string;
 };
