@@ -1,6 +1,6 @@
-$cardPadding: 28px;
-
 .card {
+  --card-padding: 28px;
+
   display: flex;
   flex-flow: column;
   box-shadow: 2px 2px 100px 0 rgba(0 0 0 / 0.2);
@@ -25,7 +25,7 @@ $cardPadding: 28px;
     font-weight: var(--fw-semibold);
     font-size: 28px;
     line-height: 1.2;
-    padding: 0 $cardPadding;
+    padding: 0 var(--card-padding);
     text-align: center;
   }
 
@@ -33,7 +33,7 @@ $cardPadding: 28px;
     font-size: 18px;
     font-weight: var(--fw-light);
     margin-bottom: 12px;
-    padding: 0 $cardPadding;
+    padding: 0 var(--card-padding);
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
@@ -46,7 +46,7 @@ $cardPadding: 28px;
     font-weight: var(--fw-light);
     line-height: 1.86;
     margin-bottom: 21px;
-    padding: 0 $cardPadding;
+    padding: 0 var(--card-padding);
   }
 
   &__textAccent {
@@ -56,7 +56,7 @@ $cardPadding: 28px;
   }
 
   &__footer {
-    padding: 0 $cardPadding $cardPadding $cardPadding;
+    padding: 0 var(--card-padding) var(--card-padding) var(--card-padding);
     margin: auto;
   }
 
@@ -82,5 +82,11 @@ $cardPadding: 28px;
     &:focus-visible {
       color: var(--clr-primary-200);
     }
+  }
+}
+
+@media (max-width: 40em) {
+  .card {
+    --card-padding: 14px;
   }
 }
